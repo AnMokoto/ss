@@ -15,11 +15,11 @@ ubuntu(){
 }
 
 if [ -f "/etc/redhat-release" ]; then
-		centos
-	else
-		# /etc/lsb-release
-		ubuntu
-	fi	
+	centos
+else
+	# /etc/lsb-release
+	ubuntu
+fi	
 
 
 
