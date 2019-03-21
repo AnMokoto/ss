@@ -35,12 +35,17 @@ if ! [ -d "ss" ];then
 	echo `bash -e ss/setup/setup.sh`
 fi
 
+if ! [ -x "$(command -v sserver)" ]; then
+	echo "----------------install fail----------------"
+	exit 1
+else
+	echo "----------------start shadowsocks----------------"
+	cd ss/setup
+	echo `bash -e ./shadowsocks.sh`
+	echo "------------------------------------------------"
+	echo "----------------Enjoy shadowsocks---------------"
+	echo "------------------------------------------------"
+fi
 
-echo "----------------start shadowsocks----------------"
-cd ss/setup
-echo `bash -e ./shadowsocks.sh`
-echo "------------------------------------------------"
-echo "----------------Enjoy shadowsocks---------------"
-echo "------------------------------------------------"
 
 
