@@ -3,8 +3,8 @@
   "local_address":"127.0.0.1",
   "local_port":8080,
   "port_password": {
-    "8080":"***",
-    "8081":"***"
+    "8080":"password1",
+    "8081":"password2"
   },
   "timeout":500,
   "mthod":"aes-256-cfb",
