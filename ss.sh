@@ -35,7 +35,7 @@ if ! [ -d "ss" ];then
 	echo `bash -e ss/setup/setup.sh`
 fi
 
-if ! [ -x "$(command -v sserver)" ]; then
+if ! [ -x "$(command -v ssserver)" ]; then
 	echo "----------------install fail----------------"
 	exit 1
 else
